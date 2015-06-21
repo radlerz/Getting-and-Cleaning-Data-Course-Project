@@ -6,7 +6,7 @@ The R script "run_analysis.R" in this repository creates a tidy and summarized v
 
 Specifically, this script:
 
-1. Merges the training and the test sets to create one data set.  
+1. Merges the training and the test data sets to create one data set.  
 
   * It does so by first merging the activity, subject and measurement data of the training data set into a R dataframe.
   * As a second step, it merges the equivalent components of the test data set into a second dataframe.  
@@ -14,9 +14,9 @@ Specifically, this script:
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-  * It does so by first naming the columns/variables in the dataframe created in Step #1 according to "feature.txt".
+  * It does so by first naming the columns/variables in the dataframe created in Step #1 according to the variable definition file "feature.txt".
   * Then it filters out columns/variables that do not identify an activity, a subject, a mean or a standard deviation.
-  * It is worth noting that a special filter is needed to get rid of measures of "meanFreq" which are not "mean" measures but a Weighted average of the frequency components to obtain a mean frequency.
+  * It is worth noting that a special filter is needed to get rid of measures on "meanFreq" which are not "mean" measures but a weighted average of the frequency components to obtain a mean frequency.
 
 3. Uses descriptive activity names to name the activities in the data set.  
 
@@ -34,7 +34,7 @@ Specifically, this script:
 
   * The output file containing the tidy data set is called "average_by_activity_subject.txt".
   * Row names and quotes are not being used in the text file.
-  * Column headers / variable names are being set at row #1.  
+  * Column headers / variable names are being set at row #1.
 		* Please read the Codebook in this repository for a description of the variables and the data contained in the file.
 		* The output file is meant to be opened in R with the command read.table("average_by_activity_subject.txt", header=TRUE) or equivalent.
 
