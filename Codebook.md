@@ -8,7 +8,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ##About the data file "average_by_activity_subject.txt"
 
-This data file is the result of combining and transforming data from the following data files in the original data set.  Details on the transformaton can be found in the README.md.
+This data file is the result of combining and transforming data from the following data files in the original data set.  Details on the transformation can be found in the README.md.
 
 - 'activity_labels.txt': Links the class labels with their activity name.
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample in the training set. Its range is from 1 to 30.
