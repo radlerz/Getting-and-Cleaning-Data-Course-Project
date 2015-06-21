@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Course Project
 
-The R script "run_analysis.R" in this repository creates a tidy version of the "UCI Human Activity Recognition using Smartphones Dataset Version 1.0 [1]" available at:
+The R script "run_analysis.R" in this repository creates a tidy and summarized version of the "UCI Human Activity Recognition using Smartphones Dataset Version 1.0 [1]" available at:
 
 	http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
@@ -27,20 +27,22 @@ Specifically, this script:
 
   * Lowercase for the entire first word.
   * Then the first character of each word afterwards is in uppercase.
-  * Non-character symbols like -, () are not being used / removed.
-  * Duplicated words in e.g. fBodyBody...  where the word Body is duplicated are being removed as well
+  * Non-character symbols like -, () are not being used.  They are being removed by this script.
+  * Duplicated words in e.g. fBodyBody...  are being removed as well.
 
 5. Creates a tidy data set with the average of each variable for each activity and each subject
 
-  * Output file is called "average_by_activity_subject.txt".
+  * The output file containing the tidy data set is called "average_by_activity_subject.txt".
   * Row names and quotes are not being used in the text file.
-  * Column headers / variable names are being set at row #1.  Please read the codebook.md for their description.
+  * Column headers / variable names are being set at row #1.  
+		* Please read the Codebook in this repository for a description of the variables and the data contained in the file.
+		* The output file is meant to be opened in R with the command read.table("average_by_activity_subject.txt", header=TRUE) or equivalent.
 
 6.  This "run_analysis.R" scripts assumes that:
 
-  * Data files needed are either in or under the current working directory it itself is located.
+  * Data files needed are either in or below the current working directory it itself is located.
   * The latest version of R packages dplyr and tidyr had been installed in the running R environment already.
 
 7.  Footnotes:
 
-  * [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+  * [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
