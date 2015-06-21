@@ -34,7 +34,7 @@ Specifically, this script:
 
   * The output file containing the tidy data set is called "average_by_activity_subject.txt".
   * Row names and quotes are not being used in the text file.
-  * Column headers / variable names are being set at row #1.
+  * Column headers / variable names are being set at the first row.
 		* Please read the Codebook in this repository for a description of the variables and the data contained in the file.
 		* The output file is meant to be opened in R with the command read.table("average_by_activity_subject.txt", header=TRUE) or equivalent.
 
