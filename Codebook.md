@@ -36,6 +36,7 @@ For example:
 - Guro = measures taken by the gyroscope
 - Mean = mean of the a measurement
 - Std = standard deviation of a measurement
+- X, Y or Z is used to denote 3-axial signals in the X, Y and Z directions
 
 Please refer to the "features_info.txt" file in the original data set for further descriptions.
 
